@@ -2,7 +2,6 @@
 
 *{
     margin: 0;
-    padding: 0;
 }
 body{
     overflow-x: hidden;
@@ -24,13 +23,13 @@ body{
     height: 80px;
     /* border: 1px solid purple; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .logo{
     width: 100px;
-    height: 60px;
+    height: 50px;
     /* border:1px solid pink; */
     text-align: justify;
 }
@@ -119,7 +118,7 @@ body{
 .card{
     border: 1px solid black;
     width: 416px;
-    height: 150px;
+    min-height: 180px;
     border-radius: 15px;
     padding: 30px 35px;
 
@@ -151,6 +150,12 @@ body{
     
 }
 
+.Popular-card-wrap img{
+    /* border: 1px solid green; */
+    width: 600px;
+}
+
+
 .destination-card-wrap{
     display: flex;
     gap: 20px;
@@ -166,13 +171,17 @@ body{
     display: flex;
 }
 
+.destination-card img {
+    width: 200px;
+}
+
 .destination-card-text{
     display: flex;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
 }
 
-.arr{
+.destination-card-text img{
     width: 20px;
     height: 25px;
     
@@ -186,7 +195,6 @@ body{
     /* border: 1px solid red; */
     display: flex;
     background-color:  #0058530D; 
-    overflow-x: hidden;
 }
 
 .best-service-wrap-content{
@@ -286,10 +294,9 @@ body{
 
 .Packages-services{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: #ECF1F0;
-    /* border: 1px solid black; */
-    overflow-x: hidden;
+    border: 1px solid black;
 
 }
 
@@ -299,14 +306,10 @@ body{
     font-size: 40px;
 }
 
-.content-card{
-    /* width: 1500px; */
-}
-
 .packages-card1{
     /* width: 1200px;
     height: 30px; */
-    /* border: 1px solid pink; */
+    /* border: 1px solid pink;     */
     display: flex;
     margin-bottom: 20px;
     align-items: center;
@@ -314,19 +317,7 @@ body{
     gap: 55px;
 }
 
-.one p{
-    width: 120px;
-    /* height: 30px; */
-    padding: 14px 0px;
-    background-color: green; 
-    border-radius: 10px;
-    font-size: 15px;
-    color:#ffffff;
-    text-align: center;
-}
-
-
-.two p{
+.tab{
     width: 120px;
     /* height: 60px; */
     padding: 14px 0px;
@@ -339,6 +330,7 @@ body{
 }
 
 .packages-card2{
+    /* border: 1px solid  black; */
     width: 1300px;
     height: 350px;
     display: flex;
@@ -423,7 +415,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 20px;
+    margin-top: 100px;
     border-radius: 5px;
 }
 
@@ -434,7 +426,7 @@ body{
     width: 100%;
     height: 100vh;
     padding: 20px;
-    overflow-x: hidden;
+    border: 1px solid green;
 }
 
 .trip-wrap-content h2{
@@ -483,7 +475,6 @@ body{
     background: #ECF1F0;
     width: 100%;
     height: 90vh;
-    overflow-x: hidden;
 }
 
 .about-us-content h2{
@@ -592,3 +583,214 @@ body{
     margin-top: 80px;
 }
 
+.menu-bar{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    display: none;
+}
+
+
+
+
+@media only screen  and (max-width: 600px){
+
+    .header{
+        justify-content: space-between;
+        padding: 0px 1px;
+    }
+    .nav{
+        display: none;
+    }  
+    .profile{
+        display: none;
+    }
+    .menu-bar{
+        height: 40px;
+        width: 40px;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 8px;
+        padding: 10px 4px;
+    }
+    .menu-bar div{
+        width: 40px;
+        height: 4px;
+        background-color: black;
+        margin-bottom: 18px;
+    }
+    .hero-content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+    }
+    .tag-line h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 45px;
+    }
+    .hero-text p{
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .hero-cta button{
+        width: 184px;
+        height: 54px;
+        background-color: #00A651;
+        color: #ffffff;
+        text-align: center;
+        margin: 10px auto;
+        display: block;
+        border-radius: 10px;
+        border-color: #00A651;
+    }
+
+    .service-card-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card{
+        border: 1px solid black;
+        max-width: 100%;
+        min-height: 180px;
+        border-radius: 15px;
+        padding: 10px 10px;
+    
+    }
+
+    .Popular-card-wrap{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .Popular-card-wrap img{
+        /* border: 1px solid green; */
+        width: 100%;
+
+    }
+
+    .destination-card{
+        width: 100%;
+        height: fit-content;
+        border-radius: 20px;
+        border: 1px solid black;
+        gap: 10px;
+        display: flex;
+    }
+    
+    .destination-card-wrap{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+    
+   
+    
+    .destination-card img {
+        width: 100px;
+    }
+    
+    .destination-card-text{
+        display: flex;
+        gap: 23px;
+        align-items: center;
+    }
+    
+    .destination-card-text img{
+        width: 20px;
+        height: 25px;
+        
+    }
+
+    .best-service-wrap{
+        width: 100%;
+        height: fit-content;
+        /* border: 1px solid red; */
+        display: flex;
+        background-color:  #0058530D; 
+        justify-content: center;
+        
+    }
+    
+    .best-service-wrap-content{
+        /* border:1px solid #00A651; */
+        width: 100%;
+        height: fit-content;
+        background-image: url("/Images/map.png");
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+        margin-left: 1px;
+    }
+    .best-service-wrap-content h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 1000px;
+        
+    }
+    .best-service-wrap-content h6{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        line-height: 20px;
+    }
+
+    .best-service-card-wrap{
+        width: 100%;
+        height:fit-content;
+        /* border: 1px solid burlywood; */
+        margin-top: 10px;
+        margin-left: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .best-service-card{
+        width: 170px;
+        height: fit-content;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-left: 40px;
+        background-color: #ffffff;
+    }
+
+
+    .packages-services{
+        width: 100%
+        height:500px;
+    }
+    .packages-card1{
+        margin: 30px 0px;
+        /* height: fit-content; */
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tab{
+        width: 100px;
+    }
+    
+    .packages-card2{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .trip-wrap-content{
+        height: fit-content;
+        width: 100%;
+    }
+    
+}   

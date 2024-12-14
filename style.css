@@ -294,9 +294,9 @@ body{
 
 .Packages-services{
     width: 100%;
-    height: 120vh;
+    height: 650px;
     background: #ECF1F0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -415,7 +415,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 5px;
 }
 
@@ -426,7 +426,7 @@ body{
     width: 100%;
     height: 100vh;
     padding: 20px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .trip-wrap-content h2{
@@ -496,7 +496,6 @@ body{
     width: 100%;
     height: 100vh;
     padding-top: 40px;
-    overflow-x: hidden;
 }
 
 .backpage-content{
@@ -514,31 +513,42 @@ body{
     background-repeat: no-repeat;
     margin: 20px 100px;
     display: flex;
-    overflow-x: hidden;
 }
 
-.text{
+.segment1 h3{
     margin-top: 40px;
     margin-left: 200px;
     text-align: center;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     display: block;
 }
 
-.images{
+.seg-button{
+    margin-top: 200px;
+    margin-left: -350px;
+    margin-right: 20px;
     display: flex;
-    gap: 50px;
-}
-.image2{
-    display:flex;
-    height: 40px;
-    margin-left: 220px;
+    justify-content:space-between;
+    gap: 30px;
+    
 }
 
-.image3{
-    display: flex;
-    height: 40px;
-    width: 20px;
+.sg1{
+    background-color: white;
+    width: 180px;
+    height: 30px;
+    color: black;
+    border: none;
+    /* display: block; */
+}
+
+.sg2{
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    /* display: block; */
 }
 
 .segment2{
@@ -553,12 +563,11 @@ body{
      
 }
 
-.rhs{
+.lhs{
     margin-top: 50px;
 }
 
-.segment2-img1{
-    display: inline-block;
+.segment2-text img{
     margin-bottom: 30px;
 }
 
@@ -573,14 +582,11 @@ body{
 
 }
 
-.end {
-    display: flex;
-}
 
 .end img{
     width: 150px;
     height: 150px;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .menu-bar{
@@ -764,13 +770,16 @@ body{
     }
 
 
-    .packages-services{
-        width: 100%
-        height:500px;
+    .Packages-services{
+        width: 100%;
+        height: fit-content;
+        background: #ECF1F0;
+    
     }
+    
     .packages-card1{
         margin: 30px 0px;
-        /* height: fit-content; */
+        height: fit-content;
         display: flex;
         gap: 15px;
         justify-content: center;
@@ -788,9 +797,111 @@ body{
         gap: 30px;
     }
 
+    .packages-content-wrap button{
+       
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
     .trip-wrap-content{
-        height: fit-content;
+        height: 400px;
         width: 100%;
+    }
+
+    .trip-image{
+        width: 350px;
+        height: 300px;
+        justify-content: center;
+        margin-left: -150px;
+        margin-right: 0px;
+        margin-top: -15px;
+    }
+
+    .about-us-content{
+        background: #ECF1F0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .backpage-wrap{
+        width: 100%;
+        height: fit-content;
+        padding-top: 40px;
+    }
+
+    .backpage-content{
+        width: 200px;
+        height: fit-content;
+        margin-left: -30px;
+        margin-right: 0px;
+    }
+
+    .segment1{
+        width: 400px;
+        height: 200px;
+        background-image: url("/Images/segment-img1.png");
+        background-size: 500px;
+        background-repeat: no-repeat;
+        margin: -20px 10px;
+        /* display: flex; */
+    }
+    
+    .segment1 h3{
+        margin-top: 30px;
+        margin-left: 50px;
+        text-align: center;
+        font-size: 15px;
+        /* padding-bottom: 80px; */
+    
+    }
+    
+    .seg-button{
+        margin-top: 120px;
+        margin-left: -300px;
+        margin-right: 20px;
+        display: flex;
+        justify-content:space-between;
+        gap: 30px;
+        
+    }
+    
+    .sg1{
+        background-color: white;
+        width: 150px;
+        height: 30px;
+        color: black;
+        border: none;
+        /* display: block; */
+    }
+    
+    .sg2{
+        background-color: green;
+        width: 100px;
+        height: 30px;
+        color: white;
+        border: none;
+        /* display: block; */
+    }
+    
+    .segment2{
+        width: 900px;
+        height: 280px;
+        margin-top: 0px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        display: block;
+        padding: 10px;
+    }
+
+    .middle img{
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    .end img{
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
     }
     
 }   

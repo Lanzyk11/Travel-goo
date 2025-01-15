@@ -677,7 +677,7 @@ body{
     }
 
     .Popular-card-wrap img{
-        /* border: 1px solid green; */
+        
         width: 100%;
 
     }
@@ -718,7 +718,6 @@ body{
     .best-service-wrap{
         width: 100%;
         height: fit-content;
-        /* border: 1px solid red; */
         display: flex;
         background-color:  #0058530D; 
         justify-content: center;
@@ -726,7 +725,6 @@ body{
     }
     
     .best-service-wrap-content{
-        /* border:1px solid #00A651; */
         width: 100%;
         height: fit-content;
         background-image: url("/Images/map.png");
@@ -753,7 +751,6 @@ body{
     .best-service-card-wrap{
         width: 100%;
         height:fit-content;
-        /* border: 1px solid burlywood; */
         margin-top: 10px;
         margin-left: 10px;
         flex-direction: column;
@@ -843,7 +840,6 @@ body{
         background-size: 500px;
         background-repeat: no-repeat;
         margin: -20px 10px;
-        /* display: flex; */
     }
     
     .segment1 h3{
@@ -851,8 +847,6 @@ body{
         margin-left: 50px;
         text-align: center;
         font-size: 15px;
-        /* padding-bottom: 80px; */
-    
     }
     
     .seg-button{
@@ -871,7 +865,6 @@ body{
         height: 30px;
         color: black;
         border: none;
-        /* display: block; */
     }
     
     .sg2{
@@ -880,7 +873,6 @@ body{
         height: 30px;
         color: white;
         border: none;
-        /* display: block; */
     }
     
     .segment2{
